@@ -40,6 +40,7 @@ header ul {
 
 header ul li {
     display: inline-block;
+    position: relative;
     line-height: 36px;
     list-style: none;
 }
@@ -57,6 +58,12 @@ header li a:hover {
     color: #fff;
 }
 
+.bor-left img {
+    position: absolute;
+    top: 6px;
+    left: 20px;
+}
+
 li a:hover > span {
     text-decoration: underline;
 }
@@ -64,26 +71,23 @@ li a:hover > span {
 .bor-left {
     padding-left: 50px;
     border-left: 1px solid #56a2dc;
-    background: url('../img/flag.png') no-repeat 20px 6px;
+    /*background: url('../img/flag.png') no-repeat 20px 6px;*/
 }
 
 .fon {
+    display: flex;
     width: 1215px;
     height: 1028px;
     background: url('../img/fon.jpg');
-    /*display: flex;*/
 }
 
 .form1 {
-    position: absolute;
-    top: 249px;
-    left: 420px;
     width: 560px;
     height: 610px;
+    margin: auto;
     background: rgba(0, 0, 0, .5);
     color: #fff;
     text-align: center;
-    /*margin: auto;*/
 }
 
 h2 {
@@ -119,7 +123,7 @@ h2 {
     color: #fff;
 }
 
-.box input:hover {
+.box input:focus {
     background: #00508b;
     color: #fff;
     box-shadow: 0 0 15px #00508b;
