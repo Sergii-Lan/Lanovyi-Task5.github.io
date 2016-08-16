@@ -126,7 +126,7 @@ h2 {
 .box input:focus {
     background: #00508b;
     color: #fff;
-    box-shadow: 0 0 4px 4px #00508b;
+    box-shadow: 0 0 10px 2px #689bcc;
     outline: none;
 }
 
